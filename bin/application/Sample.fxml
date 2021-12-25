@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="431.0" fitWidth="640.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@s.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="PasswordTextField" layoutX="238.0" layoutY="239.0" prefHeight="25.0" prefWidth="204.0" promptText="Password" style="-fx-background-color: #6A73EC;" />
+            <Button fx:id="LoginAsManager" layoutX="265.0" layoutY="287.0" mnemonicParsing="false" onAction="#loginAsManagerFunc" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #6872EC;" text="login as manager" />
+            <Button fx:id="LoginAsSalesPerson" layoutX="265.0" layoutY="347.0" mnemonicParsing="false" onAction="#loginSalesPersonFunc" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #6872EC;" text="login as salesperson" />
+            <Label fx:id="SuccessField" layoutX="227.0" layoutY="163.0" prefHeight="20.0" prefWidth="227.0" text="Login To Proceed" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <TextField fx:id="UserField" layoutX="239.0" layoutY="202.0" prefHeight="25.0" prefWidth="204.0" promptText="User Name" style="-fx-background-color: #6A73EC;" />
+            <VBox layoutY="419.0" prefHeight="184.0" prefWidth="640.0" style="-fx-background-color: #6872EC;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
